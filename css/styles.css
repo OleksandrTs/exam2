@@ -1,0 +1,845 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0; }
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block; }
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent; }
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%; }
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none; }
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline; }
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto; }
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block; }
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item; }
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none; }
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none; }
+
+@font-face {
+  font-family: "GothamBook";
+  src: url("../fonts/GothamBook/GothamBook.eot/");
+  src: url("../fonts/GothamBook/GothamBook.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamBook/GothamBook.woff") format("woff"), url("../fonts/GothamBook/GothamBook.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamMedium";
+  src: url("../fonts/Medium/gotham-medium-webfont.woff") format("woff"), url("../fonts/Medium/gotham-medium-webfont.woff2") format("woff2"), url("../fonts/Medium/Gotham Medium Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold; }
+
+@font-face {
+  font-family: "GothamBold";
+  src: url("../fonts/gothambold/gothambold1.eot/");
+  src: url("../fonts/gothambold/gothambold1.eot?#iefix") format("embedded-opentype"), url("../fonts/gothambold/gothambold1.woff") format("woff"), url("../fonts/gothambold/gothambold1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear; }
+
+body {
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-style: inherit;
+  line-height: 1.8;
+  font-weight: normal;
+  color: #000; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.title {
+  font-size: 4.4rem;
+  font-family: "GothamBold";
+  line-height: 1;
+  color: #000;
+  text-align: center; }
+
+.btn {
+  display: inline-block;
+  border: 1px solid #000;
+  font-family: "GothamBook";
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer; }
+
+.head {
+  background: #55b7ff;
+  background: -o-linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+  background: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+  position: relative; }
+  .head .swiper-pagination-bullet {
+    border: 1px solid #fff;
+    opacity: 1;
+    margin: 50px 0 !important;
+    width: 10px;
+    height: 10px;
+    background: transparent; }
+    .head .swiper-pagination-bullet-active {
+      background: #fff; }
+  .head .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    width: 1170px;
+    z-index: 2; }
+    .head .header__nav {
+      color: #fff;
+      font-family: "GothamBook", "Open Sans";
+      letter-spacing: 1px;
+      text-decoration: none;
+      margin: 0 30px; }
+      .head .header__nav::before {
+        content: "\25cb";
+        font-size: 2rem;
+        margin-right: 20px; }
+      .head .header__nav:hover:before {
+        content: "\25cf"; }
+    .head .header__social-links {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .head .header__social-link {
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 2.5;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      margin: 0 10px;
+      height: 40px;
+      width: 40px; }
+      .head .header__social-link:hover {
+        border-color: transparent; }
+  .head .swiper-wrapper {
+    height: 100vh; }
+  .head__content {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .head__title {
+    font-family: "GothamBold", "Open Sans";
+    font-size: 8rem;
+    font-style: inherit;
+    line-height: 0.1;
+    font-weight: normal;
+    color: #fff;
+    letter-spacing: 5px; }
+  .head__text {
+    font-family: "GothamBook", "Open Sans";
+    font-size: 1.8rem;
+    font-style: inherit;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #fff;
+    letter-spacing: 6px; }
+  .head__scroll {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 800;
+    line-height: 2.5;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: 1; }
+    .head__scroll:hover {
+      border-color: transparent; }
+
+.about__title {
+  margin: 140px 0 100px; }
+
+.about__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 140px 0; }
+
+.about__img1 {
+  width: 630px;
+  height: 470px;
+  margin-right: 70px;
+  -webkit-box-shadow: -200px -70px 0px 6px #55b7ff;
+  box-shadow: -200px -70px 0px 6px #55b7ff; }
+
+.about__img2 {
+  width: 630px;
+  height: 470px;
+  margin-left: 70px;
+  -webkit-box-shadow: 200px -70px 0px 6px #7e5aff;
+  box-shadow: 200px -70px 0px 6px #7e5aff; }
+
+.about .article {
+  width: 470px;
+  padding: 60px 0; }
+  .about .article__subtitle {
+    font-size: 2.2rem;
+    font-family: "GothamBook";
+    line-height: 1;
+    margin: 0; }
+  .about .article__title {
+    text-align: left;
+    margin: 15px 0 40px; }
+  .about .article__text {
+    font-size: 1.8rem;
+    line-height: 1.66;
+    height: 90px;
+    overflow: hidden;
+    margin: 0; }
+  .about .article__btn {
+    margin: 30px 0 60px; }
+  .about .article__link {
+    font-family: 'Open Sans';
+    font-size: 1.8rem;
+    font-style: italic;
+    text-decoration: none;
+    color: #2c4058; }
+    .about .article__link .fas {
+      margin-right: 7px; }
+
+.news {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: #55b7ff;
+  background: url("../img/latest-bg.png"), -o-linear-gradient(45deg, #3c7fd4 0%, #24ccfa 100%);
+  background: url("../img/latest-bg.png"), linear-gradient(45deg, #3c7fd4 0%, #24ccfa 100%);
+  padding: 140px 0 140px;
+  text-align: center; }
+  .news .swiper2 {
+    height: 590px;
+    margin-top: 100px; }
+  .news .swiper-wrapper {
+    max-width: 1170px; }
+  .news .swiper-button-prev::after {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 800;
+    line-height: 2.5;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    content: '\003C'; }
+  .news .swiper-button-next::after {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 800;
+    line-height: 2.5;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    content: '\003E'; }
+  .news .swiper-pagination {
+    top: 570px; }
+  .news .swiper-pagination-bullet {
+    border: 1px solid #fff;
+    opacity: 1;
+    margin: 0 15px !important;
+    width: 10px;
+    height: 10px;
+    background: transparent; }
+    .news .swiper-pagination-bullet-active {
+      background: #fff; }
+  .news__title {
+    font-size: 4.4rem;
+    font-family: "GothamMedium";
+    line-height: 1;
+    color: #fff;
+    position: relative; }
+    .news__title::before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      border: 1px solid #fff;
+      top: -40px;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      -o-transform: translate(-50%, 0);
+      transform: translate(-50%, 0); }
+  .news__article {
+    display: inline-block;
+    width: 370px;
+    height: 515px;
+    overflow: hidden;
+    background-color: #fff; }
+  .news__article-img {
+    height: 240px; }
+  .news__article-title {
+    font-size: 2.2rem;
+    font-family: "GothamBold";
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    height: 66px;
+    overflow: hidden;
+    margin: 20px 30px 5px 20px; }
+  .news__article-text {
+    margin: 0 20px 30px 20px;
+    font-family: 'Open Sans';
+    font-size: 1.8rem;
+    line-height: 1.66;
+    letter-spacing: .8px;
+    text-align: left;
+    height: 60px;
+    overflow: hidden; }
+  .news__article-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 20px;
+    text-align: left;
+    padding: 0; }
+  .news__article-photo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; }
+  .news__article-author {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-family: "GothamBook";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.2; }
+  .news__article-time {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-family: "GothamBook";
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #55b7ff; }
+
+.projects {
+  text-align: center;
+  padding: 180px 0 140px; }
+  .projects__title {
+    font-size: 4.4rem;
+    font-family: "GothamMedium";
+    line-height: 1;
+    margin: 0;
+    color: #000;
+    position: relative; }
+    .projects__title::before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      border: 1px solid #000;
+      top: -40px;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      -o-transform: translate(-50%, 0);
+      transform: translate(-50%, 0); }
+  .projects__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 214px 214px;
+    gap: 10px;
+    padding: 100px 0 60px; }
+  .projects__img {
+    grid-column: span 1;
+    grid-row: span 1;
+    position: relative; }
+    .projects__img--lg {
+      grid-column: span 2;
+      grid-row: span 2; }
+
+.map {
+  height: 700px; }
+
+.footer {
+  background: #55b7ff;
+  background: url("../img/footer-bg.png"), -o-linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+  background: url("../img/footer-bg.png"), linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+  position: relative; }
+  .footer .contact {
+    background-image: url("../img/contact-bg.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 770px;
+    height: 450px;
+    background-color: #fff;
+    top: -75px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .footer .contact__title {
+      font-family: "GothamMedium";
+      font-size: 4.4rem;
+      line-height: 1;
+      text-align: center;
+      margin: 90px 0 55px;
+      color: #000;
+      position: relative; }
+      .footer .contact__title::before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        border: 1px solid #000;
+        top: -40px;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0); }
+    .footer .contact__infos {
+      display: inline-block;
+      width: 50%;
+      margin: 0; }
+      .footer .contact__infos a:hover, .footer .contact__infos a:focus, .footer .contact__infos a:active {
+        text-decoration: underline; }
+    .footer .contact__info {
+      display: inline-block;
+      font-family: "GothamBook";
+      font-size: 1.8rem;
+      line-height: 1.4;
+      text-decoration: none;
+      color: #000;
+      margin: 15px; }
+      .footer .contact__info i {
+        color: #2c4058;
+        margin: 5px; }
+    .footer .contact__form {
+      display: inline-block;
+      vertical-align: top;
+      position: relative; }
+    .footer .contact__input {
+      font-family: "GothamBook";
+      font-size: 1.8rem;
+      line-height: 1.25;
+      margin: 15px 0;
+      width: 310px;
+      border: none;
+      border-bottom: 1px solid #bbb; }
+      .footer .contact__input:hover, .footer .contact__input:focus, .footer .contact__input:active {
+        border-bottom: 1px solid #000; }
+    .footer .contact__btn {
+      position: absolute;
+      background-color: transparent;
+      right: 0; }
+  .footer__wrapper {
+    position: absolute;
+    top: 270px;
+    width: 770px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    vertical-align: middle; }
+  .footer__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 40px; }
+  .footer__social-links {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+  .footer__social-link {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    height: 40px;
+    width: 40px; }
+    .footer__social-link:hover {
+      border-color: transparent; }
+  .footer__copyrights {
+    color: #fff;
+    font-family: "GothamBook";
+    margin-right: 55px;
+    position: relative; }
+    .footer__copyrights::after {
+      content: '';
+      height: 18px;
+      border: 1px solid #fff;
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .footer__creator {
+    color: #fff;
+    font-family: "GothamBook"; }
